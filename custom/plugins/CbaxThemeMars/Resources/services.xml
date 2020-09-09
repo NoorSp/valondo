@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+	
+		<!-- Add emotion component auto loader -->
+        <service id="cbax_theme_mars.emotion_view_subscriber" class="Shopware\Components\Emotion\EmotionComponentViewSubscriber">
+            <argument>%cbax_theme_mars.plugin_dir%</argument>
+            <tag name="shopware.event_subscriber" />
+        </service>
+
+        <service id="cbax_theme_mars.theme_mars_helper" class="CbaxThemeMars\Components\ThemeMarsHelper">
+            <argument>%cbax_theme_mars.plugin_name%</argument>
+            <argument type="service" id="shopware.plugin.cached_config_reader" />
+        </service>
+
+		<service id="cbax_theme_mars.subscriber.backend" class="CbaxThemeMars\Subscriber\Backend">
+			<argument>%cbax_theme_mars.plugin_dir%</argument>
+			<argument type="service" id="cbax_theme_mars.theme_mars_helper" />
+            <tag name="shopware.event_subscriber" />
+        </service>
+		
+        <service id="cbax_theme_mars.subscriber.frontend" class="CbaxThemeMars\Subscriber\Frontend">
+			<argument>%cbax_theme_mars.plugin_dir%</argument>
+			<argument>%cbax_theme_mars.plugin_name%</argument>
+			<argument type="service" id="shopware.plugin.cached_config_reader" />
+			<argument type="service" id="cbax_theme_mars.theme_mars_helper" />
+            <tag name="shopware.event_subscriber" />
+        </service>
+
+        <service id="cbax_theme_mars.subscriber.theme" class="CbaxThemeMars\Subscriber\Theme">
+			<argument>%cbax_theme_mars.plugin_dir%</argument>
+            <tag name="shopware.event_subscriber" />
+        </service>
+		
+		<service id="cbax_theme_mars.subscriber.emotion" class="CbaxThemeMars\Subscriber\Emotion">
+			<argument>%cbax_theme_mars.plugin_dir%</argument>
+			<argument>%cbax_theme_mars.plugin_name%</argument>
+			<argument type="service" id="shopware.plugin.cached_config_reader" />
+			<argument type="service" id="cbax_theme_mars.theme_mars_helper" />
+            <tag name="shopware.event_subscriber" />
+        </service>
+		
+		<service id="cbax_theme_mars.cbax_mars_product_service" class="CbaxThemeMars\Bundle\StoreFrontBundle\CbaxMarsProductService"
+                 decorates="shopware_storefront.list_product_service"
+                 public="false">
+
+            <argument type="service" id="cbax_theme_mars.cbax_mars_product_service.inner"/>
+            <argument type="service" id="dbal_connection" />
+			<argument type="service" id="shopware_storefront.field_helper_dbal" />
+			<argument type="service" id="shopware_storefront.media_hydrator_dbal" />
+        </service>
+		
+    </services>
+</container>

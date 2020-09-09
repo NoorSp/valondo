@@ -1,0 +1,23 @@
+.box--basic,
+.box--image,
+.box--list,
+.box--minimal {
+
+	.box--content {
+		border: 1px solid transparent;
+	}
+
+	.cbax--preview-image-hover {
+
+		.box--content {
+
+			&.is--expanded,
+			&.is--expanded-out {
+
+				&.has--border {
+					border: 1px solid @brand-primary;
+				}
+			}
+		}
+	}
+}

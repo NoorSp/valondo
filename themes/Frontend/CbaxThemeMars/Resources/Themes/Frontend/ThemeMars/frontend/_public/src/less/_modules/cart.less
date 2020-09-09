@@ -1,0 +1,73 @@
+.content--basket{
+	.unitize(margin-top, 20);
+	background: #fff;
+	.unitize-padding(0, 20);
+	border-radius: @border-radius;
+	
+	.product--table {
+		.panel--body {
+			padding: 20px 0;
+		}
+	}
+}
+
+.content--confirm {
+	background: #fff;
+	.unitize-padding(0, 20, 20, 20);
+	border: 1px solid @border-color;
+	border-radius: @border-radius;
+}
+
+.is--act-shippingpayment {
+	
+    .product--table {
+        .unitize(margin-top, 25);
+    }
+}
+
+@media screen and(min-width: @tabletViewportWidth) {
+	.is--act-shippingpayment .product--table .table--actions {
+		.unitize(margin-top, 20);
+	}
+}
+
+.product--table {
+	.panel--body {
+		border: 0;
+	}
+	
+	.premium-product.panel {
+        border: 0;
+		
+		.premium-product--title {
+			text-align: center;
+			margin: 0;
+		}
+    }
+	
+	.basket--footer {
+		border-top: 0;
+		background: @mars-basket-footer-bg;
+		color: @mars-basket-footer-color;
+	}
+	
+	.table--media {
+		.table--media-outer {
+			border-radius: @border-radius;
+		}
+	}
+
+	.add-product--field,
+	.add-voucher--field {
+		border-radius: @border-radius;
+	}
+ 
+	.add-product--button,
+	.add-voucher--button {
+		border-radius: @border-radius;
+	}
+	
+	.cart--badge {
+		border-radius: @border-radius;
+	}
+}

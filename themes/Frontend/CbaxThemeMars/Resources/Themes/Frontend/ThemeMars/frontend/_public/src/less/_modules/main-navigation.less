@@ -1,0 +1,59 @@
+@media screen and (min-width: @tabletViewportWidth) {
+	.navigation-main {
+		background: @mars-navigation-bg;
+		border-top: 1px solid @border-color;
+		border-bottom: 1px solid @brand-primary;
+		position: relative;
+		
+		.navigation--list {
+			background: transparent;
+		}
+		
+		.navigation--link {
+			border-top: 3px solid transparent;
+			border-radius: 0;
+			.unitize-padding(15, 13);
+			text-transform: uppercase;
+			.unitize(font-size, 15);
+			color: @mars-navigation-color;
+		}
+		
+		.navigation--link:hover {
+			border-top: 3px solid @brand-primary;
+		}
+		
+		.is--active .navigation--link {
+			border-top: 3px solid @brand-primary;
+			color: @mars-navigation-active-color;
+			background: @mars-navigation-active-bg;
+			font-weight: bold;
+			.unitize-padding(15, 14);
+			text-transform: uppercase;
+		}
+		
+		.navigation--entry {
+			
+			&:hover,
+			&.is--hovered,
+			.navigation--link:hover {
+				background: @mars-navigation-hover-bg;
+				color: @mars-navigation-hover-color;
+			}
+		}
+		
+		.navigation--list .navigation--entry.is--hovered {
+			background: @mars-navigation-hover-bg;
+    		color: @mars-navigation-hover-color;
+			
+			.navigation--link {
+				background: @mars-navigation-hover-bg;
+				color: @mars-navigation-hover-color;
+			}
+		}
+		
+		.is--active .navigation--link:hover {
+			background: @mars-navigation-hover-bg;
+			color: @mars-navigation-hover-color;
+		}
+	}
+}

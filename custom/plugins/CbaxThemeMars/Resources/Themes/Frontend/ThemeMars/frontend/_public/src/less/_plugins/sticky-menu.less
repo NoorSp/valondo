@@ -1,0 +1,145 @@
+// @phoneLandscapeViewportWidth: 30em;      480px
+// @tabletViewportWidth: 48em;              768px
+// @tabletLandscapeViewportWidth: 64em;     1024px
+// @desktopViewportWidth: 78.75em;          1260px
+
+/* Sticky Menü */
+.navigation-sticky {
+	background: @mars-sticky-navigation-bg;
+	border-top: 1px solid @brand-primary;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+	display: none;
+	position: relative;
+
+	.container {
+		background: transparent;
+		.unitize-padding(8, 0, 8, 0);
+	}
+
+	.logo-main {
+		.unitize-padding(4, 0, 0, 10);
+
+		img {
+			.unitize(max-height, 35);
+		}
+	}
+	
+	.shop--navigation {
+		width: 100%;
+		
+		.navigation--entry .btn {
+			color: @mars-sticky-navigation-color;
+		}
+	}
+}
+
+.sticky--navigation {
+	display: none;
+	float: left;
+	width: 5%;
+
+	// Menu Button toggle OffCanvas
+	.entry--menu-bottom {
+		.tap-highlight-color();
+		.unitize-height(40, 16);
+		top: 0;
+		left: 0;
+		position: relative;
+		display: block;
+		font-weight: @font-bold-weight;
+		text-align: left;
+
+		.btn {
+			.unitize(padding-left, 48);
+			.unitize(line-height, 35);
+			.unitize(font-size, 17);
+			.unitize-height(40, 16);
+			color: @mars-sticky-navigation-color;
+			width: auto;
+			background: 0 none;
+			border: 0 none;
+		}
+
+		.icon--menu {
+			.unitize(font-size, 20);
+		}
+	}
+}
+
+.dummy-sticky {
+	display: none;
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+/* Back To Top Button */
+.backtotop {
+	position: fixed;
+	bottom: unit(@mars-backtotop-distance-bottom, px);
+	cursor: pointer;
+	display: none;
+	z-index: 4444;
+	
+	&.right {
+		right: unit(@mars-backtotop-distance-side, px);
+	}
+	
+	&.left {
+		left: unit(@mars-backtotop-distance-side, px);
+	}
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+	.navigation-sticky {
+
+		.logo-main {
+			display: block;
+			width: 35%;
+		}
+	 }
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+	.navigation-sticky {
+
+		.logo-main {
+			display: block;
+			width: 30%;
+		}
+
+		.shop--navigation {
+			width: 70%;
+		}
+
+		&.bottom-menu {
+
+			.sticky--navigation {
+				display: block;
+			}
+
+			.logo-main {
+				width: 25%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+	.navigation-sticky {
+
+		.logo-main {
+			width: 30%;
+		}
+
+		.shop--navigation {
+			width: 70%;
+		}
+
+		&.bottom-menu {
+			.logo-main {
+				width: 25%;
+			}
+		}
+	}
+}

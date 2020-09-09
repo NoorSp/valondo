@@ -1,0 +1,31 @@
+.filter-panel {
+	border-radius: @border-radius;
+	background-image: none;
+}
+
+.filter-panel--flyout {
+	border-radius: @border-radius;
+}
+
+
+.filter--active {
+	border-radius: @border-radius;
+}
+
+.filter-panel--checkbox {
+	border-radius: @border-radius;
+
+	input[type="checkbox"] {
+		&:checked ~ .checkbox--state {
+			background-image: none;
+		}
+	}
+
+	.checkbox--state {
+		border-radius: @border-radius;
+	}
+}
+
+.filter-panel--media-label {
+    border-radius: @border-radius;
+}

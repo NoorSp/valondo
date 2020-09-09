@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
+    <label lang="de">Theme Mars</label>
+    <label lang="en">Theme Mars</label>
+    <version>2.7.0</version>
+    <copyright>Copyright © 2015, Coolbax</copyright>
+    <license>Spezial-Lizenz</license>
+    <link>https://www.coolbax.de/handbuecher/template/plugin-theme-mars-flat-responsive-template</link>
+    <author>Coolbax</author>
+	<description lang="de">
+		<![CDATA[<h1>Theme Mars</h1>
+		<p>"Theme Mars" ist ein modernes Full Responsive-Template, konzipiert und entwickelt im modernen und trendigen Flat Design. Es ist ein Template, für jede Art von Shops, wie z.B.: Modedesign, Elektronik, Sport, Möbel und Bekleidung.</p>
+		<ul>
+			<li>Wählen Sie aus 16 Schriften die zwei Schriftarten</li>
+			<li>Globaler Benachrichtigungstext für z.B. Urlaubshinweise</li>
+			<li>VAT of other countries created in Shopware are taken into account</li>
+			<li>Widget für die rechte, linke und unteren Bildschirmrand</li>
+			<li>Anbindungsmöglichkeiten an Google, Bing, Alexa und Pinterest</li>
+			<li>Einbindung eines Hinweistextes zu den Datenschutzrichtlinen</li>
+			<li>Erweiterte Farbeinstellung sowie Hintergrundbild möglich</li>
+		</ul>
+		<p><a href="https://store.shopware.com/search?sSearch=CbaxThemeMars">Plugin instructions</a></p>
+		]]>
+		</description>
+	<description lang="en"><![CDATA[
+		<h1>Theme Mars</h1>
+		<p>Theme Mars "is a modern full responsive template, designed and developed in a modern and trendy flat design.It is a template for any kind of shops, such as: fashion design, electronics, sports, furniture and clothing.</p>
+		<ul>
+			<li>Choose from 16 fonts the two fonts</li>
+			<li>Global notification text for e.g. holiday Notes</li>
+			<li>Widget for the right, left and bottom of the screen</li>
+			<li>Connectivity to Google, Bing, Alexa and Pinterest</li>
+			<li>Integration of an information text to the privacy policy</li>
+			<li>Extended color adjustment and background image possible</li>
+			<li>Integration of the plugin: Breadcrumb extension</li>
+		</ul>
+		<p><a href="https://store.shopware.com/en/search?sSearch=CbaxThemeMars">Plugin instructions</a></p>
+		]]>
+	</description>
+
+    <compatibility minVersion="5.3.0" />
+	
+	<changelog version="2.7.0">
+        <changes lang="de">Diverse Anpassungen am Layout speziell für Tablet Format;</changes>
+        <changes lang="en">Various layout adjustments especially for tablet format</changes>
+    </changelog>
+	<changelog version="2.6.9">
+        <changes lang="de">Verdeckte Einstellungen im reiter Footer behoben;</changes>
+        <changes lang="en">Fixed hidden settings in the rider footer</changes>
+    </changelog>
+	<changelog version="2.6.8">
+        <changes lang="de">Fehlerhafte Darstellung der Produktbilder beseitigt (Tablet Ansicht), wenn das Plugin "Variantenbilder im Listing als Slider" aktiv ist;</changes>
+        <changes lang="en">Incorrect display of product images eliminated (tablet view) when the "Variant images in listing as slider" plugin is active;</changes>
+    </changelog>
+	<changelog version="2.6.7">
+        <changes lang="de">Fehler beim Trennen der Varianten in den Dokumenten behoben;</changes>
+        <changes lang="en">Fixed bug separating variants in documents;</changes>
+    </changelog>
+	<changelog version="2.6.6">
+        <changes lang="de">Fehler beim Ausblenden der Icons in der Top Bar behoben;</changes>
+        <changes lang="en">Fixed bug when hiding icons in Top Bar;</changes>
+    </changelog>	
+	<changelog version="2.6.5">
+        <changes lang="de">Fehler beim Nachladen der Artikel, wenn individuelle Filter abgeschalten sind;</changes>
+        <changes lang="en">Failed to reload items when individual filters are turned off;</changes>
+    </changelog>
+	<changelog version="2.6.4">
+        <changes lang="de">Fehler bei Gutscheinüberschrift behoben, wenn im Theme "Variantenanzeige" aktiviert ist.</changes>
+        <changes lang="en">Fixed a voucher heading bug if "Theme Display" is enabled in the theme.</changes>
+    </changelog>
+	<changelog version="2.6.3">
+        <changes lang="de">Fehler beim aufrufen der Bestellungen im Kundenaccount behoben</changes>
+        <changes lang="en">Fixed an error when calling orders in the customer account</changes>
+    </changelog>
+	<changelog version="2.6.2">
+        <changes lang="de">Plugin auf neue Plugin Struktur gebracht</changes>
+        <changes lang="en">Plugin brought on new plugin structure</changes>
+    </changelog>
+    <changelog version="2.6.1">
+        <changes lang="de"><![CDATA[Fehler beim Öffnen des Menüs im Kundenaccount behoben (Links waren auf dem Smartphone nicht anklickbar).]]></changes>
+        <changes lang="en"><![CDATA[Fixed an error when opening the menu in the customer account (links were not clickable on the smartphone).]]></changes>
+    </changelog>
+    <changelog version="2.6.0">
+        <changes lang="de"><![CDATA[Problem mit Fullscreen in den Einkaufswelten (Storytelling) behoben.]]></changes>
+        <changes lang="en"><![CDATA[Problem with fullscreen in shopping worlds (storytelling) fixed.]]></changes>
+    </changelog>
+    <changelog version="2.5.9">
+        <changes lang="de"><![CDATA[Kompatibilität mit Shopware 5.5 hergestellt <br/>
+            Kleine Fehler im Design und in den Einstellungen im Theme Manager behoben]]></changes>
+        <changes lang="en"><![CDATA[Compatibility with Shopware 5.5 made <br/>
+            Fixed minor bugs in the Theme Manager theme and settings]]></changes>
+    </changelog>
+    <changelog version="2.5.8">
+        <changes lang="de"><![CDATA[Erweiterung der Einstellmöglichkeiten für das Sticky Menü (Farbe & Logo) <br/>
+            Übersichtlichere Variantenanzeige im Merkzettel, Account, Checkout, Dokumente und bei den E-Mails ]]></changes>
+        <changes lang="en"><![CDATA[Extension of the setting options for the Sticky menu (color & logo) <br/>
+            Clearer variant display in notepad, account, checkout, documents and e-mails]]></changes>
+    </changelog>
+    <changelog version="2.5.7">
+        <changes lang="de"><![CDATA[Kleine Verbesserungen]]></changes>
+        <changes lang="en"><![CDATA[Small improvements]]></changes>
+    </changelog>
+    <changelog version="2.5.6">
+        <changes lang="de"><![CDATA[Prämienartikel und Filter angepasst]]></changes>
+        <changes lang="en"><![CDATA[Premium items and filters adapted]]></changes>
+    </changelog>
+    <changelog version="2.5.5">
+        <changes lang="de"><![CDATA[Kleine Fehler korrigiert]]></changes>
+        <changes lang="en"><![CDATA[Corrected small mistakes]]></changes>
+    </changelog>
+    <changelog version="2.5.4">
+        <changes lang="de"><![CDATA[Fehler in Einkaufswelten Element korrigiert]]></changes>
+        <changes lang="en"><![CDATA[Fixed bug in shopping world element]]></changes>
+    </changelog>
+    <changelog version="2.5.3">
+        <changes lang="de"><![CDATA[Einkaufswelten Element hinzugefügt]]></changes>
+        <changes lang="en"><![CDATA[Shopping world element added]]></changes>
+    </changelog>
+    <changelog version="2.5.2">
+        <changes lang="de"><![CDATA[Verschiedene kleine Korrekturen]]></changes>
+        <changes lang="en"><![CDATA[Various small corrections]]></changes>
+    </changelog>
+    <changelog version="2.5.1">
+        <changes lang="de"><![CDATA[Fehler in den Einkaufswelten korrigiert]]></changes>
+        <changes lang="en"><![CDATA[Corrected mistakes in the shopping worlds]]></changes>
+    </changelog>
+    <changelog version="2.5.0">
+        <changes lang="de"><![CDATA[
+        Großes Update +++ Viele neue Funktionen und Einstellungen <br/>
+        Verschiedene Schriftarten zuweisen – Viele Schriftarten zur Auswahl <br/>
+        Benachrichtigungsfunktion <br/>
+        Sidebar Widget (für Promotion Aktionen) <br/>
+        Footer Widget (für Kontaktmöglichkeiten) <br/>
+        Webmastertools <br/>
+        DSGVO Datenschutz integriert <br/>
+        Top Bar <br/>
+        Promotionboxen in der Sidebar integriert <br/>
+        Im Listing per Mouseover Artikelbilder wechseln oder zoomen <br/>
+        Bewertungen prominent neben der Artikelbeschreibung einblenden <br/>
+        Individuellen Footer gestalten <br/>
+        Zahlungs- und Versand Icons in verschieden Farben <br/>
+        Promotion im Offcanvas Warenkorb einblenden <br/>
+        Individuelle Farben einstellen <br/>
+        Viele Aktionen zeitgesteuert automatisch einblenden lassen <br/>
+        <br/>
+        <br/>
+        Und sehr viel mehr… <br/>
+        <br/>
+        <br/>
+        Wichtig: Nach dem Update Das Theme im Theme Manager aufrufen, neu speichern und kompilieren
+        ]]></changes>
+        <changes lang="en"><![CDATA[
+        Big update +++ Many new features and settings <br/>
+        Assign different fonts - Many fonts to choose from <br/>
+        notification function <br/>
+        Sidebar widget (for promotion actions) <br/>
+        Footer Widget (for contact information) <br/>
+        Webmaster tools <br/>
+        DSGVO data privacy integrated <br/>
+        Top Bar <br/>
+        Promotion boxes integrated in the sidebar <br/>
+        In the listing by mouseover to change or zoom product images <br/>
+        Show ratings prominently next to the item description <br/>
+        Create an individual footer <br/>
+        Payment and shipping icons in different colors <br/>
+        Show promotion in Offcanvas cart <br/>
+        Set individual colors <br/>
+        Automatically show many actions timed <br/>
+        <br/>
+        <br/>
+        And much more ... <br/>
+        <br/>
+        <br/>
+        Important: After the update Access the Theme in the Theme Manager, save it and compile it
+        ]]></changes>
+    </changelog>
+    <changelog version="2.4.0">
+        <changes lang="de"><![CDATA[append und prepend aus den Blöcken entfernt]]></changes>
+        <changes lang="en"><![CDATA[append and prepend removed from the blocks]]></changes>
+    </changelog>
+    <changelog version="2.3.9">
+        <changes lang="de"><![CDATA[Nicht bestellbare Varianten werden jetzt im Template grau dargestellt und können nicht mehr ausgewählt werden]]></changes>
+        <changes lang="en"><![CDATA[Unordered variants are now grayed out in the template and can no longer be selected]]></changes>
+    </changelog>
+    <changelog version="2.3.8">
+        <changes lang="de"><![CDATA[Probleme mit den Filtern behoben]]></changes>
+        <changes lang="en"><![CDATA[Fixed problems with the filters]]></changes>
+    </changelog>
+    <changelog version="2.3.7">
+        <changes lang="de"><![CDATA[Neue Konfigurationsfelder in den Kategorien hinzugefügt: <br/>
+                        NICHT in linker Navigation anzeigen <br/>
+                        Topseller ausblenden]]></changes>
+        <changes lang="en"><![CDATA[Added new configuration fields in the categories: <br/>
+                        DO NOT show in left navigation <br/>
+                        Hide Topseller]]></changes>
+    </changelog>
+    <changelog version="2.3.6">
+        <changes lang="de"><![CDATA[Kompatibilität mit Shopware 5.3.0 hergestellt]]></changes>
+        <changes lang="en"><![CDATA[Compatibility with Shopware 5.3.0 made]]></changes>
+    </changelog>
+    <changelog version="2.3.5">
+        <changes lang="de"><![CDATA[Anpassung der Lieferzeit]]></changes>
+        <changes lang="en"><![CDATA[Adjustment of delivery time]]></changes>
+    </changelog>
+    <changelog version="2.3.4">
+        <changes lang="de"><![CDATA[Anpassung des Slider in den Einkaufswelten]]></changes>
+        <changes lang="en"><![CDATA[Adjustment of the slider in the shopping worlds]]></changes>
+    </changelog>
+    <changelog version="2.3.3">
+        <changes lang="de"><![CDATA[Anpassung im Listing]]></changes>
+        <changes lang="en"><![CDATA[Adaptation in the listing]]></changes>
+    </changelog>
+    <changelog version="2.3.2">
+        <changes lang="de"><![CDATA[Kleinere CSS Anpassungen]]></changes>
+        <changes lang="en"><![CDATA[Smaller CSS adjustments]]></changes>
+    </changelog>
+    <changelog version="2.3.1">
+        <changes lang="de"><![CDATA[Block Anpassung der Badgets]]></changes>
+        <changes lang="en"><![CDATA[Block adaptation of the badgets]]></changes>
+    </changelog>
+    <changelog version="2.3.0">
+        <changes lang="de"><![CDATA[CSS Anpassungen für die Landingpages]]></changes>
+        <changes lang="en"><![CDATA[CSS customizations for the landing pages]]></changes>
+    </changelog>
+    <changelog version="2.2.9">
+        <changes lang="de"><![CDATA[Anpassung beim Einsatz unseres Plugins Hersteller Professionell]]></changes>
+        <changes lang="en"><![CDATA[Adaptation when using our plugin manufacturer Professional]]></changes>
+    </changelog>
+    <changelog version="2.2.8">
+        <changes lang="de"><![CDATA[Sprachauswahl korrigiert]]></changes>
+        <changes lang="en"><![CDATA[Language selection corrected]]></changes>
+    </changelog>
+    <changelog version="2.2.7">
+        <changes lang="de"><![CDATA[Kleine Anpassungen]]></changes>
+        <changes lang="en"><![CDATA[Small adjustments]]></changes>
+    </changelog>
+    <changelog version="2.2.6">
+        <changes lang="de"><![CDATA[Kleine Verbesserungen]]></changes>
+        <changes lang="en"><![CDATA[Small improvements]]></changes>
+    </changelog>
+    <changelog version="2.2.5">
+        <changes lang="de"><![CDATA[Kleine Korrekturen im Javascript]]></changes>
+        <changes lang="en"><![CDATA[Small corrections in Javascript]]></changes>
+    </changelog>
+    <changelog version="2.2.4">
+        <changes lang="de"><![CDATA[Design Anpassungen bei Einsatz unserer Plugins Lexikon und Hersteller Professional]]></changes>
+        <changes lang="en"><![CDATA[Design adjustments using our plugins lexicon and manufacturer professional]]></changes>
+    </changelog>
+    <changelog version="2.2.3">
+        <changes lang="de"><![CDATA[Kleine CSS Korrekturen]]></changes>
+        <changes lang="en"><![CDATA[Small CSS corrections]]></changes>
+    </changelog>
+    <changelog version="2.2.2">
+        <changes lang="de"><![CDATA[Kleine Anpassungen]]></changes>
+        <changes lang="en"><![CDATA[Small adjustments]]></changes>
+    </changelog>
+    <changelog version="2.2.1">
+        <changes lang="de">Anzeige Warenkorb verbessert</changes>
+        <changes lang="en">Display cart improved</changes>
+    </changelog>
+    <changelog version="2.2.0">
+        <changes lang="de">Erste Veröffentlichung</changes>
+        <changes lang="en">Initial Release</changes>
+    </changelog>
+</plugin>

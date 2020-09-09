@@ -1,0 +1,108 @@
+@media screen and (min-width: @phoneLandscapeViewportWidth) {
+    .alert {
+        &.is--variant {
+			width: 80%
+		}
+    }
+}
+
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+    .alert {
+        &.is--variant {
+			width: 100%
+		}
+    }
+}
+
+.cbax-notification {
+	.unitize(font-size, 14);
+    .unitize(line-height, 24);
+	.unitize-padding(10, 10);
+    .clearfix();
+    position: relative;
+    overflow: hidden;
+	color: @mars-notification-color;
+    background: @mars-notification-bg;
+	width: 100%;
+	display: none;
+	
+	&.notification-show-mobile {
+		display: block;
+	}
+	
+	.container {
+		display: block;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	&.above {
+		box-shadow: 0 2px 2px rgba(0,0,0,0.15);
+	}
+	
+	&.below {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		box-shadow: 0 -2px 2px rgba(0,0,0,0.15);
+		z-index: @zindex-compare-list;
+	}
+	
+	.notification-text {
+		width: 100%;
+		text-align: center;
+	}
+	
+    &.is-button {
+		
+		.notification-text {
+			width: 100%;
+			float: none;
+			.unitize(padding-bottom, 10);
+		}
+		
+		.notification-link {
+			width: 100%;
+			float: none;
+			text-align: center;
+			
+			.button {
+				border: 1px solid @mars-notification-color;
+				.unitize-padding(5, 10);
+				margin: 0 auto;
+				display: inline-block;
+				
+				a {
+					color: @mars-notification-color;
+				}
+			}
+		}
+		
+		@media screen and (min-width: @tabletViewportWidth) {
+			.notification-text {
+				width: 75%;
+				float: left;
+				.unitize(padding-bottom, 0);
+			}
+			
+			.notification-link {
+				width: 25%;
+				float: left;
+			}
+		}
+    }
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+	.cbax-notification {
+		display: block;
+		
+		.container {
+			display: flex;
+		}
+	}
+}
+
+.alert.is--variant {
+	width: 100%;
+}

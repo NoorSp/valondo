@@ -1,0 +1,68 @@
+// @phoneLandscapeViewportWidth: 30em;      480px
+// @tabletViewportWidth: 48em;              768px
+// @tabletLandscapeViewportWidth: 64em;     1024px
+// @desktopViewportWidth: 78.75em;          1260px
+
+.advanced-menu {
+	
+	.unitize(max-width, @main-container);
+	background: @mars-navigation-bg;
+	color: @mars-navigation-color;
+
+	.menu--container {
+		background: @mars-navigation-bg;
+	}
+	
+	.content--wrapper {
+		.unitize-margin(10, 10);
+	}
+	
+	.button-container {
+		.unitize-padding(13, 30, 13, 0);
+		background: @mars-navigation-hover-bg;
+		color: @mars-navigation-hover-color;
+		
+		.button--category {
+            .unitize-padding(16, 50, 11, 20);
+			color: @mars-navigation-hover-color;
+
+            &:hover {
+                .unitize-padding(16, 50, 11, 25);
+            }
+        }
+		
+		.icon--arrow-right {
+			.unitize(margin-top, -3);
+		}
+	}
+	
+	.teaser--headline {
+		.primary-font-element();
+	}
+	
+	.menu--list-item-link {
+		.unitize(font-size, 14);
+		color: @mars-navigation-color;
+		
+		&:hover {
+			color: @mars-navigation-hover-color;
+		}
+	}
+	
+	.item--level-0 {
+		.unitize(padding-bottom, 10);
+	}
+	
+	.menu--level-1 {
+		.unitize-margin(0, 0, 0, 20);
+		
+		.menu--list-item-link {
+			.unitize(font-size, 14);
+			color: @mars-navigation-color;
+			
+			&:hover {
+				color: @mars-navigation-hover-color;
+			}
+		}
+	}
+}

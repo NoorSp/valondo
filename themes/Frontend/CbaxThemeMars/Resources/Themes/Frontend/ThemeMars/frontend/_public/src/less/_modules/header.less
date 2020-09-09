@@ -1,0 +1,437 @@
+.header-main {
+
+	background: @mars-header-bg;
+	color: @mars-header-color;
+
+	.logo-main {
+		.logo--shop,
+		.logo--link{
+			.unitize(height, @mars-logo-size-smartphone);
+		}
+	}
+
+	@media screen and (min-width: @tabletViewportWidth) {
+		.logo-main {
+
+			.logo--shop,
+			.logo--link{
+				.unitize(height, @mars-logo-size-tablet);
+			}
+		}
+	}
+
+	@media screen and (min-width: @desktopViewportWidth) {
+		.logo-main {
+
+			.logo--shop,
+			.logo--link{
+				.unitize(height, @mars-logo-size-desktop);
+			}
+		}
+	}
+	
+
+	.header--navigation {
+		.unitize-padding(0, 0, 10, 0)
+	}
+	
+	.top-bar {
+		background: @mars-top-bar-bg;
+		.unitize-padding(6, 0);
+		.unitize(font-size, @mars-top-bar-font-size);
+		box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+	}
+	
+	.top-bar--navigation {
+		
+		.navigation--link {
+			
+			color: @mars-top-bar-color;
+			
+			&:hover {
+				color: @mars-top-bar-color;
+			}
+			
+			& > a {
+				color: @mars-top-bar-color;
+			}
+		}
+		
+		.navigation--entry {
+			
+			border-right: 1px solid @mars-top-bar-color;
+			color: @mars-top-bar-color;
+			.unitize(line-height, @mars-top-bar-height);
+			
+			&:hover {
+				color: @mars-top-bar-color;
+			}
+			
+			& > a {
+				color: @mars-top-bar-color;
+			}
+			
+			&:last-child {
+				border-right: none;
+			}
+		}
+		
+		.entry--service {
+			
+			&:after,
+			&::after {
+				display: none;
+			}
+			
+			&.js--is--dropdown-active {
+				color: @mars-top-bar-color;
+			}
+		}
+		
+		.service--list {
+			.unitize(min-width, 200);
+			.unitize(top, 46);
+		}
+		
+		.notes--quantity {
+			border: 0;
+			border-radius: @border-radius;
+			background: @brand-secondary;
+    		color: #fff;
+			.unitize-margin(0, 0, 0, 7);
+		}
+	}
+	
+	.top-bar--cbax {
+		
+		.entry--cbax {
+			border-right: none;
+		}
+	}
+	
+	@media only screen and (max-width: @tabletLandscapeViewportWidth) {
+		.top-bar--cbax {
+			display: none;
+		}
+	}
+	
+	@media only screen and (min-width: @tabletViewportWidth) {
+		.entry--notepad,
+		.entry--account {
+			display: none;
+		}
+	}
+}
+
+.shop--navigation {
+	
+	.cart--description {
+		color: @text-color;
+	}
+	
+	@media only screen and (max-width: @tabletLandscapeViewportWidth) {
+		.cart--description {
+			display: none;
+		}
+	}
+	
+	@media only screen and (min-width: @tabletLandscapeViewportWidth) {
+		.cart--quantity {
+			.unitize(left, 32);
+		}
+	}
+}
+
+@media only screen and (min-width: @tabletViewportWidth) {
+	.header-main {
+				
+		.header--navigation {
+			.unitize-padding(25, 0, 25, 0);
+		}
+	}
+	
+	.is--minimal-header {
+		
+			.header-main {
+				
+				.header--navigation {
+					.unitize-padding(10, 0);
+				}
+			}
+	}
+}
+
+
+
+@media only screen and (min-width: @tabletViewportWidth) {
+	.is--minimal-header {
+		
+			.header-main {
+				
+				.header--navigation {
+					.unitize-padding(20, 0);
+				}
+			}
+	}
+}
+
+@media only screen and (min-width: @tabletViewportWidth) {
+	.shop--navigation .entry--search {
+		width: 50%;
+	}
+	
+	.shop--navigation .entry--search {
+		left: 1%;
+	}
+}
+
+/* Top Bar */
+.header-top-bar {
+	background: @mars-top-bar-bg;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+	color: @mars-top-bar-color;
+	
+	.container {
+		background: transparent;
+		.unitize-padding(6, 0);
+		
+		.top-bar-block {
+			.unitize(font-size, 13);
+			display: inline-block;
+		}
+		
+		.top-bar-block.left {
+			.unitize(margin-right, 30);
+		}
+		
+		.top-bar-btn {
+			.unitize(font-size, 10);
+			font-weight: bold;
+		}
+	}
+}
+
+@media only screen and (max-width: @tabletViewportWidth) {
+	.header-top-bar {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: @desktopViewportWidth) {
+	.header-top-bar {
+		.unitize-padding(0, 10);
+	}
+}
+
+@media screen and (min-width: @phoneLandscapeViewportWidth) {
+	.results--list {
+		border-radius: @border-radius;
+	}
+}
+
+/* Icon Warenkorb */
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+    .navigation--list .entry--cart .cart--link .cart--amount {
+        
+    }
+}
+
+a.btn.is--icon-left.cart--link {
+	background-image: none;
+    color: @brand-primary;
+}
+
+@media only screen and (min-width: @tabletViewportWidth) {
+	.account--dropdown-navigation {
+		.unitize(top, 40);
+		.unitize-padding(5, 0, 0, 0);
+		background: #fff;
+		
+		.account--menu {
+			
+			border: 1px solid @border-color;
+			
+			.account--menu-container {
+				overflow: hidden;
+			}
+			
+			.sidebar--navigation .navigation--entry {
+				width: 100%;
+				border: 0;
+				text-align: center;
+				height: auto;
+				
+				.navigation--link {
+					color: @text-color;
+				}
+			}
+		}
+	}
+}
+
+
+// Drowdown menu for account navigation
+.mars-account--dropdown-navigation {
+    display: none;
+    text-align: left;
+
+    .navigation--logout-personalized {
+        display: inline-block;
+    }
+
+    .navigation--logout {
+        display: block;
+        .unitize(padding-left, 23);
+    }
+
+    .navigation--signin {
+        .unitize(padding-top, 15);
+        .unitize(padding-bottom, 15);
+        .unitize(margin-top, 7);
+        border-bottom: 1px solid @border-color;
+        display: block;
+        text-align: center;
+
+        .navigation--signin-btn.btn {
+            .unitize(margin-bottom, 5);
+            width: 95%;
+            text-align: center;
+        }
+    }
+
+    .navigation--register {
+        .unitize(font-size, 13)
+    }
+
+    .navigation--link.link--logout.navigation--personalized {
+        .unitize(line-height, 20);
+        color: @text-color;
+        font-weight: @font-base-weight;
+
+        .icon--logout {
+            position: relative;
+            .unitize(top, 10);
+        }
+
+        &:hover {
+            color: @brand-primary;
+        }
+    }
+
+    &.off-canvas {
+        background: @gray;
+
+        .account--menu,
+        .sidebar--navigation {
+            text-align: left;
+
+            .navigation--entry {
+                display: block;
+                margin: 0;
+
+                .navigation--link.link--logout.navigation--personalized  {
+                    .unitize(padding-top, 9);
+                    .unitize(padding-bottom, 9);
+
+                     [class^="icon--"] {
+                        .unitize-margin(0, 5, 0, 0);
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+
+        .account--close-off-canvas {
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+}
+
+@media only screen and (min-width: @tabletViewportWidth) {
+	// Drowdown menu for account navigation
+    .mars-account--dropdown-navigation {
+        .unitize-min-width(200);
+        .unitize-max-width(250);
+        .unitize-padding(5, 0);
+        .unitize(top, 45);
+        display: none;
+        position: absolute;
+        right: 0;
+        z-index: @zindex-header-navigation-dropdown;
+        text-align: left;
+		.unitize(top, 40);
+		.unitize-padding(5, 0, 0, 0);
+		background: #fff;
+
+        .js--is--dropdown-active & {
+            display: block;
+        }
+
+        .navigation--signin {
+            .unitize(padding-bottom, 6);
+            .unitize(margin-bottom, 6);
+            .unitize(margin-top, 5);
+            padding-top: 0;
+
+            .navigation--signin-btn.btn {
+                width: 100%;
+                margin-bottom: 0;
+            }
+        }
+
+        .navigation--smartphone {
+            display: none;
+        }
+
+        .account--menu {
+            text-align: left;
+            background: #fff;
+			border: 1px solid @border-color;
+			
+			.navigation--headline {
+				text-align: center;
+			}
+			
+			.account--menu-container {
+				overflow: hidden;
+			}
+
+            &::after {
+                .rotate(135deg);
+                .unitize-width(8);
+                .unitize-height(8);
+                .unitize(right, 18);
+                content: '';
+                display: block;
+                position: absolute;
+                background: #fff;
+                border-color: @border-color;
+                border-width: 0 0 1px 1px;
+                border-style: solid;
+                top: 0;
+            }
+
+            .sidebar--navigation {
+                text-align: left;
+
+                .navigation--entry {
+                    display: block;
+					width: 100%;
+					border: 0;
+					text-align: center;
+					height: auto;
+                }
+
+                .navigation--link {
+                    .unitize-padding(3, 0);
+					color: @text-color;
+                }
+
+                .link--logout {
+                    .unitize-padding(10, 0, 0, 0);
+                }
+            }
+        }
+    }
+}

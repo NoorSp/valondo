@@ -1,0 +1,57 @@
+// @phoneLandscapeViewportWidth: 30em;      480px
+// @tabletViewportWidth: 48em;              768px
+// @tabletLandscapeViewportWidth: 64em;     1024px
+// @desktopViewportWidth: 78.75em;          1260px
+
+.content--breadcrumb .breadcrumb--list {
+	overflow: inherit;
+}
+
+.content--breadcrumb .breadcrumb--entry {
+	position: relative;
+}
+
+.content--breadcrumb .breadcrumb--entry, .content--breadcrumb .breadcrumb--separator {
+	overflow: visible
+}
+.breadcrumb--list .subBreadcrumb {
+	.unitize-min-width(150);
+    .unitize-padding(5, 0);
+	background-color: #FFFFFF;
+	border: 1px solid @border-color;
+	list-style: none;
+	position: absolute;
+	top: 38px;
+	left: 8px;
+	z-index: @zindex-header-service-list;
+	display: none;
+	
+	li {
+		line-height: normal;
+	}
+	
+	a {
+		color: @text-color;
+		display: block;
+    	.unitize-padding(5, 10);
+	}
+	
+	a:hover {
+		color: @brand-primary;
+	}
+}
+
+.breadcrumb--list .subBreadcrumb::after {
+	background: #fff none repeat scroll 0 0;
+    border-color: @border-color;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    content: "";
+    display: block;
+    position: absolute;
+	.unitize(left, 18);
+    .unitize(-5, 16, top);
+    .rotate(135deg);
+    .unitize-width(8);
+	.unitize-height(8);
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.4/engine/Shopware/Components/Plugin/schema/config.xsd">
+
+    <elements>
+	
+        <element type="boolean" scope="shop">
+            <name>active</name>
+            <label lang="de">Aktiv</label>
+            <label lang="en">Active</label>
+            <value>true</value>
+			<options>
+				<position>1</position>
+			</options>
+        </element>
+		
+    </elements>
+</config>

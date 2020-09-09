@@ -1,0 +1,161 @@
+// @phoneLandscapeViewportWidth: 30em;      480px
+// @tabletViewportWidth: 48em;              768px
+// @tabletLandscapeViewportWidth: 64em;     1024px
+// @desktopViewportWidth: 78.75em;          1260px
+
+@media only screen and (min-width: @tabletViewportWidth) {
+	
+	/* Fremd Plugin - Sidebar ausblenden */
+	.is--ctl-listing .is--no-sidebar .cbax-aside {
+		display: none;
+
+		& + .content--wrapper {
+			margin: 0;
+		}
+	}
+	
+	.is--ctl-listing.is--no-sidebar {
+
+		/* Kompatibilität mit eigenen Plugins */
+		&:not(.is--suppliermodified) {
+
+			.cbax-aside {
+				display: none;
+
+				& + .content--wrapper {
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	.is--ctl-listing,
+	.is--ctl-search {
+		/* Kompatibilität mit eigenen Plugins */
+		&:not(.is--suppliermodified) {
+
+			.cbax-aside + .content--wrapper {
+				.unitize(margin-left, 270);
+			}
+		}
+	}
+	
+	.cbax-aside .listing--actions .action--filter-btn {
+		display: none;
+	}
+	
+	.cbax-aside .action--filter-options .filter--actions .filter--btn-apply[disabled^="disabled"] {
+		display: none;
+	}
+	
+	.cbax-aside {
+		display: block;
+		.unitize(margin-top, 0);
+		.unitize(padding-top, 0);
+		float: left;
+		.unitize(width, 248);
+	}
+
+
+	.cbax-aside .sidebar-main {
+		float: none;
+	}
+
+	.cbax-filter-sidebar {
+		background: #fff;
+		.unitize-padding(10, 10);
+	}
+	
+	.cbax-aside .action--filter-options .filter--container {
+		padding: 0;
+		margin: 0;
+		display: block;
+	}
+	
+	.cbax-aside .filter--btn-apply {
+		width: 100%;
+	}
+	
+	.cbax-filter-sidebar .filter--container .filter--actions {
+		border: 0;
+		padding: 0;
+	}
+	
+	.cbax-filter-sidebar #filter {
+		display: block;
+		padding: 0;
+	}
+
+	.cbax-filter-sidebar .filter-panel {
+		width: 100%;
+		height: auto;
+		background-image: none;
+		border: none;
+		border-bottom: 1px solid @border-color;
+		border-radius: 0;
+		margin-left: 0;
+		background: @mars-filter-bg;
+		color: @mars-filter-color;
+	}
+	
+	.cbax-filter-sidebar .filter-panel:last-child {
+		border: none;
+	}
+	
+	.cbax-filter-sidebar .filter-panel.is--collapsed .filter-panel--flyout {
+		border: 0;
+	}
+	
+	.cbax-filter-sidebar .filter-panel .filter-panel--flyout {
+		position: relative;
+		z-index: 800;
+		background: @mars-filter-bg;
+	}
+
+	.cbax-filter-sidebar .filter-panel .filter-panel--flyout .filter-panel--label {
+		color: @mars-filter-color;
+	}
+	
+	.cbax-filter-sidebar .filter-panel .filter-panel--flyout {
+		.filter-panel--checkbox.is--disabled ~ .filter-panel--label,
+		.filter-panel--radio.is--disabled ~ .filter-panel--label {
+			color: #dadae5;
+		}
+	}
+	
+	.cbax-filter-sidebar .filter-panel.is--collapsed-permanent .filter-panel--flyout {
+		height: auto;
+		overflow: visible;
+	}
+	
+	.cbax-filter-sidebar .filter-panel .filter-panel--flyout .filter-panel--content {
+		.unitize(max-height, 169);
+	}
+	
+	.cbax-filter-sidebar .filter-panel .filter-panel--icon,
+	.cbax-filter-sidebar .filter-panel .filter-panel--title,
+	.cbax-filter-sidebar .filter-panel:hover .filter-panel--icon,
+	.cbax-filter-sidebar .filter-panel:hover .filter-panel--title {
+		color: @mars-filter-color;
+	}
+	
+	.cbax-filter-sidebar .action--filter-options.is--collapsed,
+	.cbax-filter-sidebar .action--filter-options.is--active-filter {
+		border-top: none;
+	}
+	
+	.cbax-aside .filter--facet-container,
+    .cbax-aside .filter--actions-bottom {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: @tabletViewportWidth) {
+	.cbax-aside .action--filter-options .filter--actions {
+		border: 0;
+	}
+}
+
+.filter-panel--media-option {
+	width: 21%;
+}

@@ -1,0 +1,42 @@
+// @phoneLandscapeViewportWidth: 30em;      480px
+// @tabletViewportWidth: 48em;              768px
+// @tabletLandscapeViewportWidth: 64em;     1024px
+// @desktopViewportWidth: 78.75em;          1260px
+
+.product--box {
+	.product--image {
+		.image--element {
+			.cbax--preview-image--1 {
+				opacity: 1;
+				-moz-transition: opacity @cbax_previewimagechange_duration @cbax_previewimagechange_function;
+				-webkit-transition: opacity @cbax_previewimagechange_duration @cbax_previewimagechange_function;
+				transition: opacity @cbax_previewimagechange_duration @cbax_previewimagechange_function;
+			}
+			.cbax--preview-image--2 {
+				opacity: 0;
+				-moz-transition: opacity @cbax_previewimagechange_duration @cbax_previewimagechange_function;
+				-webkit-transition: opacity @cbax_previewimagechange_duration @cbax_previewimagechange_function;
+				transition: opacity @cbax_previewimagechange_duration @cbax_previewimagechange_function;
+			}
+
+			img {
+				-moz-transition: all @cbax_previewimagechange_duration @cbax_previewimagechange_function;
+				-webkit-transition: all @cbax_previewimagechange_duration @cbax_previewimagechange_function;
+				transition: all @cbax_previewimagechange_duration @cbax_previewimagechange_function;
+			}
+
+			&:hover {
+				.cbax--preview-image--1 {
+					opacity: 0;
+				}
+				.cbax--preview-image--2 {
+					opacity: 1;
+				}
+
+				img.image--zoom {
+					transform: scale((@cbax_previewimagchange_zoom / 100));
+				}
+			}
+		}
+	}
+}

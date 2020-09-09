@@ -1,0 +1,31 @@
+.js--tab-menu {
+
+    .tab--container-list .tab--container {
+		background: #fff;
+		border: 0;
+    }
+	
+	.tab--link {
+		.transition(background 0.3s ease);
+		background: @mars-tabs-bg;
+		border: 0;
+		border-radius: @border-radius;
+		border-bottom: 1px solid #fff;
+		color: @mars-tabs-color;
+
+		&:hover {
+			background:@mars-tabs-hover-bg;
+			color: @mars-tabs-hover-color;
+		}
+
+		&.is--active {
+			background: @mars-tabs-active-bg;
+			color: @mars-tabs-active-color;
+
+			&:hover {
+				background:@mars-tabs-hover-bg;
+				color: @mars-tabs-hover-color;
+			}
+		}
+	}
+}

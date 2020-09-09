@@ -1,0 +1,25 @@
+.image--gallery {
+	
+	.button--zoom-in,
+    .button--zoom-out,
+    .button--zoom-reset {
+		border-radius: @border-radius;
+    }
+}
+
+.image-gallery--modal {
+	width: 99% !important;
+	height: 98% !important;
+	
+	.icon--cross {
+		.linear-gradient(@btn-secondary-top-bg, @btn-secondary-bottom-bg);
+		color: @btn-secondary-text-color;
+		border: 0 none;
+		border-radius: @border-radius;
+		
+		&:hover {
+			background: @btn-secondary-hover-bg;
+			color: @btn-secondary-hover-text-color;
+		}
+	}
+}

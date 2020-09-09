@@ -1,0 +1,40 @@
+.custom-page--content {
+	background: #fff;
+	.unitize(margin-top, 0);
+	.unitize-padding(0, 25);
+	border-radius: @border-radius;
+	
+	ol, ul {
+		.unitize-margin(0, 15, 15, 15);
+	}
+	
+	ol li, ul li {
+		.unitize-margin(0, 0, 0, 5);
+		.unitize(line-height, 24);
+	}
+	
+	.custom-page--tab-headline, h1 {
+		.unitize(margin-top, 20);
+		.unitize(font-size, 26);
+	}
+}
+
+@media screen and (min-width: @phoneLandscapeViewportWidth) {
+	.ajax-modal--custom .is-smartphone {
+		display: none;
+	}
+	
+	.content--custom .is-smartphone {
+		display: none;
+	}
+}
+
+@media screen and (max-width: @phoneLandscapeViewportWidth) {
+	.ajax-modal--custom .is-desktop {
+		display: none;
+	}
+	
+	.content--custom .is-desktop {
+		display: none;
+	}
+}

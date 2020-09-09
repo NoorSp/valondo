@@ -1,0 +1,100 @@
+.product--box {
+
+	&.box--basic,
+	&.box--minimal,
+	&.box--image,
+	&.box--list {
+		.product--title {
+			.primary-font-element();
+		}
+	}
+	
+	&.box--minimal {
+		.product--delivery {
+			text-align: center;
+			.unitize(height, 45);
+		}
+	}
+	
+	.box--content {
+		 background: #fff;
+		 border: 0;
+	}
+	
+	.product--price .price--default.is--discount {
+		color: @mars-price-discount-color;
+	}
+	
+	.product--badges {
+		
+		.product--badge {
+			border-radius: @border-radius;
+		}
+		
+		.badge--delivery {
+			color: @mars-badge-shipping-color;
+			background: @mars-badge-shipping-bg;
+		}
+	}
+}
+
+@media screen and (max-width: @tabletViewportWidth) {
+	.product--box {
+		padding: 2% 0 0 2%;
+	}
+}
+
+@media screen and (max-width: @phoneLandscapeViewportWidth) {
+	.product--box {
+		padding: 3% 0 0 2.5%;
+	}
+}
+
+.box--minimal {
+
+	.product--image {
+		.unitize(height, 234);
+	}
+	
+	.product--rating-container {
+		text-align: center;
+	}
+	
+	.product--title {
+		text-align: center;
+	}
+	
+	.product--price-info {
+		text-align: center;
+		.unitize(height, 60);
+		
+		.product--price-outer {
+			display: inline-block;
+			.unitize(height, 30);
+		}
+		
+		.product--price {
+			position: relative;
+			left: auto;
+			top: auto;
+		}
+	}
+}
+
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+	.box--minimal {
+		width: 33.33%;
+	}
+}
+
+@media screen and (max-width: @tabletLandscapeViewportWidth) {
+	.box--minimal {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: @phoneLandscapeViewportWidth) {
+	.box--minimal {
+		width: 100%;
+	}
+}

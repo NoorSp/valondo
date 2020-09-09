@@ -1,0 +1,85 @@
+.banner--container {
+	
+	.banner--img {
+		border-radius: @border-radius;
+	}
+}
+
+.listing {
+	.unitize-padding(0, 0, 10, 0);
+}
+
+.listing--actions {
+	border: 0;
+}
+
+.listing--bottom-paging {
+	background: #fdfdff;
+	border: 0;
+	border-radius: @border-radius;
+}
+
+@media only screen and (min-width: @tabletViewportWidth) {
+	.listing--actions {
+		background: @mars-filter-bg;
+	}
+}
+
+.action--sort {
+
+	.sort--label {
+		color: @mars-filter-color;
+	}
+}
+
+.listing--paging {
+	clear:both
+}
+
+@media only screen and (max-width: @tabletViewportWidth) {
+	
+	.action--sort {
+		margin: 0;
+	}
+	
+	.listing--paging {
+		padding: 0;
+		clear:both
+	}
+}
+
+.listing--content {
+	.unitize(margin-top, 0);
+	.unitize(padding-top, 0);
+}
+
+.vendor--info {
+	border-radius: @border-radius;
+}
+
+.box--minimal {
+	.liveshopping--listing {
+
+		.liveshopping--container {
+			border-radius: @border-radius;
+		}
+
+        .product--price-info {
+            position: relative;
+			.unitize-height(60);
+        }
+	}
+}
+
+.liveshopping--listing {
+
+	.liveshopping--container {
+		border-radius: @border-radius;
+	}
+}
+
+.category--teaser {
+	.category--headline {
+		.primary-font-element();
+	}
+}

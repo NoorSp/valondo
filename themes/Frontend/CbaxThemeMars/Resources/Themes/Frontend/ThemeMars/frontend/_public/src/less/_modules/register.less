@@ -1,0 +1,42 @@
+.register--content {
+	.unitize(margin-top, 20);
+}
+
+.register--login {
+	.unitize-margin(20, 0);
+}
+
+.register--advantages {
+	background: #fff;
+	.unitize-padding(0, 20, 20, 20);
+	border-radius: @border-radius;
+}
+
+.steps--container {
+	background: @mars-step-container-bg;
+	color: @mars-step-container-color;
+	.unitize(margin-top, 1);
+}
+
+.steps--content {
+
+	.steps--entry {
+
+		.icon {
+			background-image: none;
+			background: @mars-step-icon-bg;
+			color: @mars-step-icon-color;
+		}
+
+		.text {
+			width: auto;
+			color: @mars-step-container-color;
+		}
+	}
+
+	.is--active .icon {
+		background-image: none;
+		background: @mars-btn-primary-top-bg;
+		color: @mars-btn-primary-text-color;
+	}
+}

@@ -1,0 +1,19 @@
+// @phoneLandscapeViewportWidth: 30em;      480px
+// @tabletViewportWidth: 48em;              768px
+// @tabletLandscapeViewportWidth: 64em;     1024px
+// @desktopViewportWidth: 78.75em;          1260px
+
+/* Suche */
+@media screen and (min-width: @tabletViewportWidth){
+	.is--ctl-search .preview--image-slider{
+		display: contents;
+	}
+}
+
+@media screen and (min-width: @tabletLandscapeViewportWidth){
+	.is--ctl-search .preview--image-slider{
+		display: inherit;
+		position: absolute;
+		.unitize-width(170);
+	}
+}

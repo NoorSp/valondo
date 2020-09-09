@@ -1,0 +1,31 @@
+textarea,
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="tel"] {
+    .box-shadow(none);
+    border-radius: @border-radius;
+}
+
+.select-field,
+.js--fancy-select {
+	border-radius: @border-radius;
+	background-image: none;
+
+	select {
+		border-radius: @border-radius;
+		background-image: none;
+
+		option {
+			&:disabled {
+				color: lighten(@text-color, 20%);
+			}
+		}
+	}
+	
+	.js--fancy-select-trigger {
+        border-left: 0;
+    }
+}

@@ -1,0 +1,39 @@
+.content-main {
+	box-shadow: none;
+	background: none;
+	.unitize(margin-top, 0);
+	.unitize(margin-bottom, 20);
+}
+
+@media screen and (max-width: @tabletLandscapeViewportWidth) {
+	.content-main {
+		.unitize-padding(0, 10);
+		.unitize(margin-bottom, 10);
+	}
+}
+
+.content-main--inner {
+	.unitize-padding(0, 0);
+}
+
+.is--rounded {
+	border-radius: @border-radius;
+}
+
+@media screen and(min-width: @tabletViewportWidth) {
+    .content-main {
+        .box-shadow(none);
+    }
+}
+
+@media screen and(min-width: @tabletViewportWidth) {
+	body.mars-background-image {
+		background-position: @mars-background-position !important;
+		background-repeat: @mars-background-repeat !important;
+		background-attachment: @mars-background-attachment !important;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	.primary-font-element();
+}
