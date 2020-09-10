@@ -86,7 +86,8 @@
                     {if $sCategoryContent.cmsheadline}
                         <h1 class="hero--headline panel--title">{$sCategoryContent.cmsheadline}</h1>
                     {/if}
-                  <!---  {* Breadcrumb *}
+
+                    {* Breadcrumb *}
                     {block name='frontend_index_breadcrumb'}
                         {if count($sBreadcrumb)}
                             <nav class="content--breadcrumb block">
@@ -95,7 +96,7 @@
                                 {/block}
                             </nav>
                         {/if}
-                    {/block} --->
+                    {/block}
 						
 
                     {* Content top container *}
