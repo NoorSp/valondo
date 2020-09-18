@@ -64,7 +64,7 @@
          {if $sliderAjaxMaxShow}data-ajaxMaxShow="{$sliderAjaxMaxShow}"{/if}
          {if $sliderAjaxShowLoadingIndicator}data-ajaxShowLoadingIndicator="{$sliderAjaxShowLoadingIndicator}"{/if}
          {if $sliderInitOnEvent}data-initOnEvent="{$sliderInitOnEvent}"{/if}
-         data-product-slider="true" data-itemMinWidth="1000">
+         data-product-slider="true" {if $sArticle}data-itemMinWidth="1000"{/if}>
 
         {block name="frontend_common_product_slider_container"}
             <div class="product-slider--container">
