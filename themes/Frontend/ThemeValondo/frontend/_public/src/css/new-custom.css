@@ -565,6 +565,12 @@
 }
 
 @media screen and (max-width: 450px ){
+    .home-new-slider .manufacturer--title{
+        margin-top: 0;
+    }
+    .emotion--manufacturer .manufacturer--title ~ .manufacturer--content {
+        padding-top: 50px;
+    }
     .home-top-title {
         top: 50% !important;
     }
