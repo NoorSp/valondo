@@ -25,11 +25,15 @@ SHOPWARE_EOD;
 SHOPWARE_EOD;
 
 	protected $css = array(
-		'src/css/new-custom.css'
+        'src/css/owl.theme.default.min.css',
+        'src/css/owl.carousel.css',
+        'src/css/new-custom.css',
 	);
 
 	protected $javascript = [
-		'src/js/main.js'
+        'src/js/main.js',
+	    'src/js/owl.carousel.min.js',
+	    'src/js/script.js',
 	];
 
     public function createConfig(Form\Container\TabContainer $container)

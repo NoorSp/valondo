@@ -22,7 +22,11 @@
         {* Product name *}
         {block name='frontend_listing_box_article_name'}
             <div class="product--supplier--heart">
-                <span class="product--vd--supplier">{$sArticle.supplierName}</span>
+                <div><span class="product--vd--supplier">{$sArticle.supplierName}</span></div>
+                {* Product actions - Compare product, more information *}
+                {block name='frontend_listing_box_article_actions'}
+                    {include file="frontend/listing/product-box/product-actions.tpl"}
+                {/block}
 
             </div>
             <a href="{$sArticle.linkDetails}"
@@ -83,11 +87,6 @@
                     {/if}
                 </div>
             {/if}
-        {/block}
-
-        {* Product actions - Compare product, more information *}
-        {block name='frontend_listing_box_article_actions'}
-            {include file="frontend/listing/product-box/product-actions.tpl"}
         {/block}
 
         {block name='frontend_listing_box_article_delivery_info'}
